@@ -1,0 +1,40 @@
+<body>
+  <div class="container">
+    <header> DNA Data System
+       <!--<h1>Project_1 Testing</h1>
+
+        <form class="new-task">
+          <input type="text" name="text" placeholder="Type to add new tasks" />
+        </form>-->
+    </header>
+    <!-- Testing
+     <ul>
+        {{#each tasks}}
+          {{>task}}  
+        {{/each}}
+      </ul>
+    -->
+
+    <!-- This is to call User Login template from default-->
+    {{> loginButtons}}
+
+    <!-- Check login user and process DNA_Test template -->
+      {{#if currentUser}}
+
+    <!-- This is to call DNA_Test template from dna.html -->
+      {{> DNA_Test}}
+    {{/if}}
+
+    <br><br>
+    {{> smartContract_Test1}}
+
+  </div>
+</body>
+
+
+
+
+
+
+
+
